@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SpotDetail"
+    android:background="#DDE5EF" >
+
+    <TextView
+        android:id="@+id/titleSpot"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/hello_world"
+        android:singleLine="false"
+        android:textSize="@dimen/font_size_title" />
+    <TextView
+        android:id="@+id/byUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleSpot"
+        android:gravity="left"
+        android:text="@string/hello_world"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/pictureSpot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/titleSpot"
+        android:layout_below="@+id/byUser"
+        android:layout_marginTop="5dp"
+        android:contentDescription="Picture from the current spot"
+        android:background="#ffffff"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@+id/descriptionSpot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pictureSpot"
+        android:layout_below="@+id/pictureSpot"
+        android:layout_toLeftOf="@+id/iconRatingDark"
+        android:text="TextView" />
+    
+    <ImageView
+        android:id="@+id/iconLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/descriptionSpot"
+        android:layout_toRightOf="@+id/descriptionSpot"
+        android:src="@drawable/ic_like" 
+        />
+
+    <TextView
+        android:id="@+id/ratingSpot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/pictureSpot"
+        android:layout_alignTop="@+id/titleSpot"
+        android:text="0"
+        android:textSize="@dimen/font_size_title" />
+
+    <ListView
+        android:id="@+id/listComments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/descriptionSpot"
+        android:layout_below="@+id/inputComment"
+        android:layout_marginTop="30dp" >
+    </ListView>
+    
+
+    
+    <EditText
+        android:id="@+id/inputComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listComments"
+        android:layout_below="@+id/iconLike"
+        android:ems="10"
+        android:inputType="textMultiLine" 
+        android:layout_marginTop="10dp">
+        <requestFocus />
+	</EditText>
+    
+            
+    <Button
+        android:id="@+id/buttonSubmitComment"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/inputComment"
+        android:layout_alignTop="@+id/inputComment"
+        android:text="@string/buttonSubmitComment" />
+
+    <ImageView
+        android:id="@+id/iconRatingDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ratingSpot"
+        android:layout_toLeftOf="@+id/ratingSpot"
+        android:src="@drawable/ic_rating_dark"
+        android:layout_centerVertical="true"
+         />
+
+
+</RelativeLayout>

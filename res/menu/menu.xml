@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+<item android:id="@+id/menu_addSpot"
+      android:title="@string/menu_addSpot"
+	  android:showAsAction="never"
+	   />
+
+<item android:id="@+id/menu_seeSpots"
+      android:title="@string/menu_seeSpot"
+	  android:showAsAction="never"
+	   />
+
+<item android:id="@+id/menu_seeUsers"
+      android:title="@string/menu_seeUsers"
+	  android:showAsAction="never"
+	   />
+<item android:id="@+id/menu_profil"
+      android:title="@string/menu_profil"
+	  android:showAsAction="never"
+	   />
+
+<item android:id="@+id/menu_logout"
+      android:title="@string/menu_logout"
+	  android:showAsAction="never"
+	   />
+
+</menu>

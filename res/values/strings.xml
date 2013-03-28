@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SpotPlace</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="monText">SpotPlace</string>
+    <string name="inputLogin">Login</string>
+    <string name="inputPassword">Password</string>
+    <string name="buttonLogin">Connexion</string>
+    <string name="linkRegistration">No account ? Sign up !</string>
+    <string name="title_activity_spot_place">SpotPlace</string>
+    <string name="title_activity_spot_list">LastSpots</string>
+    <string name="title_activity_rest">RESTActivity</string>
+    <string name="title_activity_spot_detail">Details</string>
+    <string name="buttonSubmitComment">Submit</string>
+    <string name="menuTitreLastSpot">LastSpots</string>
+
+    <!-- ALINE -->
+    <string name="logo_description">Spot Place logo</string>
+    <string name="menuTitreSignUp">Sign Up !</string>
+    <string name="menuTitreCreateSpot">Create a new spot</string>
+    <string name="signUp_username">Username</string>
+    <string name="signUp_password">Password</string>
+    <string name="signUp_email">E-mail</string>
+    <string name="signUp_canton">Canton</string>
+    <string name="spotCreate_title">Title</string>
+    <string name="spotCreate_description">Description</string>
+    <string name="spotCreate_latitude">Latitude</string>
+    <string name="spotCreate_longitude">Longitude</string>
+    <string name="spotCreate_hashtags">Hashtags</string>
+    <string name="title_activity_user_sign_up">UserSignUp</string>
+    <string name="spotCreate_photo">Select a picture</string>
+    <string name="spotCreate_hashtag_help">Hashtag help</string>
+    <string name="spotCreate_buttonCreate">Create spot</string>
+    <string name="signUp_button">Sign Up !</string>
+    <string name="canton_picker">Select a canton</string>
+
+    <string-array name="canton_array">
+        <item>VD</item>
+        <item>FR</item>
+        <item>NE</item>
+        <item>JU</item>
+        <item>FR</item>
+        <item>VS</item>
+        <item>GE</item>
+    </string-array>
+
+    <!-- FIN ALINE -->
+
+    <string name="title_activity_spot_create">Add a Spot !</string>
+    <string name="menu_addSpot">Add Spot</string>
+    <string name="menu_seeSpot">See last Spots</string>
+    <string name="menu_seeUsers">See all Users</string>
+    <string name="menu_profil">Profil</string>
+    <string name="menu_logout">Logout</string>
+    <string name="title_activity_user_profil">Your profil</string>
+    <string name="userReputation">Reputation</string>
+    <string name="userBadges">Badges</string>
+    <string name="title_activity_user_list">All Users</string>
+
+</resources>

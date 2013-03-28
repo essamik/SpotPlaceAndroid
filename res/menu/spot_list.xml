@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<item
+        android:id="@+id/action_settings"
+        android:title="action_settings"
+android:showAsAction="ifRoom|withText"        />
+    
+<item android:id="@+id/quitter" 
+     android:title="addSpot"
+android:showAsAction="ifRoom|withText"     />
+
+
+<item android:id="@+id/option" 
+      android:title="seeSpots"
+android:showAsAction="ifRoom|withText"      
+      />
+
+<item android:id="@+id/test" 
+      android:title="seeSpots"
+android:showAsAction="ifRoom|withText"      
+      />
+
+<item android:id="@+id/tr" 
+      android:title="seeSpots"
+android:showAsAction="ifRoom|withText"      />
+<item android:id="@+id/qw" 
+      android:title="seeSpots"
+android:showAsAction="ifRoom|withText"      />
+<item android:id="@+id/yx" 
+      android:title="seeSpots"
+android:showAsAction="ifRoom|withText"      />
+<item android:id="@+id/as" 
+      android:title="seeSpots"
+android:showAsAction="ifRoom|withText"      />
+
+    <item android:id="@+id/menu_save"
+          android:title="menuSave"
+          android:showAsAction="ifRoom|withText" />
+
+
+
+
+
+</menu>

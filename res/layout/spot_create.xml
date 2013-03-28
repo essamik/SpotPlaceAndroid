@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="#DDE5EF">
+    
+	<!-- TITLE -->
+
+    <EditText
+        android:id="@+id/spotCreate_title_Input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/spotCreate_title"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+    
+    <!-- DESCRIPTION -->
+    <EditText
+        android:id="@+id/spotCreate_description_Input"
+        android:hint="@string/spotCreate_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spotCreate_title_Input"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textMultiLine" 
+         />
+    
+    <!-- LATITUDE -->
+    <TextView
+        android:id="@+id/spotCreate_latitude_Input"
+        android:hint="@string/spotCreate_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spotCreate_description_Input"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:visibility="gone" />
+    
+     <!-- LONGITUDE -->
+    <TextView
+        android:id="@+id/spotCreate_longitude_Input"
+        android:hint="@string/spotCreate_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spotCreate_latitude_Input"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:visibility="gone" />
+    
+    <!-- HASHTAGS -->
+    <EditText
+        android:id="@+id/spotCreate_hashtags_Input"
+        android:hint="@string/spotCreate_hashtags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spotCreate_longitude_Input"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textMultiLine"/>
+    
+	<!-- PHOTO -->
+
+    <Button
+        android:id="@+id/spotCreate_buttonCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/spotCreate_hashtags_Input"
+        android:layout_below="@+id/spotCreate_photo_button"
+        android:layout_marginTop="28dp"
+        android:text="@string/spotCreate_buttonCreate" />
+
+    <ImageButton
+        android:id="@+id/spotCreate_photo_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/spotCreate_hashtags_Input"
+        android:layout_below="@+id/spotCreate_hashtags_Input"
+        android:contentDescription="@string/spotCreate_photo"
+        android:src="@drawable/ic_action_plus" />
+
+    <TextView
+        android:id="@+id/spotCreate_photo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spotCreate_buttonCreate"
+        android:layout_toRightOf="@+id/spotCreate_photo_button"
+        android:text="@string/spotCreate_photo"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageButton
+        android:id="@+id/spotCreate_hashtag_helpButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/spotCreate_hashtags_Input"
+        android:layout_toRightOf="@+id/spotCreate_hashtags_Input"
+        android:contentDescription="@string/spotCreate_hashtag_help"
+        android:onClick="onBtnClicked"
+        android:src="@drawable/ic_action_dot" />
+
+</RelativeLayout>

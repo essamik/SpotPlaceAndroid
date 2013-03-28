@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".UserProfileActivity" 
+    android:background="#DDE5EF">
+
+    <TextView
+        android:id="@+id/userProfile_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/signUp_username" />
+
+    <TextView
+        android:id="@+id/userProfile_username_affichage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/userProfile_username"
+        android:layout_alignLeft="@+id/userProfile_username"
+        android:layout_marginLeft="80dp"
+        android:textColor="#2560A6"
+        android:text="Sam" />
+
+    <TextView
+        android:id="@+id/userProfile_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/userProfile_username"
+        android:layout_below="@+id/userProfile_username"
+        android:layout_marginTop="15dp"
+        android:text="@string/signUp_email" />
+
+    <TextView
+        android:id="@+id/userProfile_email_affichage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/userProfile_email"
+        android:layout_alignBottom="@+id/userProfile_email"
+        android:layout_alignLeft="@+id/userProfile_username_affichage"
+        android:textColor="#2560A6"
+        android:text="sam@inou.ch" />
+
+    <TextView
+        android:id="@+id/userProfile_reputation_affichage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/userProfile_reputation"
+        android:layout_alignBottom="@+id/userProfile_reputation"
+        android:layout_alignLeft="@+id/userProfile_username_affichage"
+        android:textColor="#2560A6"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/userProfile_canton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/userProfile_email"
+        android:layout_below="@+id/userProfile_email"
+        android:layout_marginTop="18dp"
+        android:text="@string/signUp_canton" />
+
+    <TextView
+        android:id="@+id/userProfile_reputation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/userProfile_canton"
+        android:layout_below="@+id/userProfile_canton_affichage"
+        android:layout_marginTop="21dp"
+        android:text="@string/userReputation" />
+
+    <TextView
+        android:id="@+id/userProfile_canton_affichage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/userProfile_canton"
+        android:layout_alignBottom="@+id/userProfile_canton"
+        android:layout_alignLeft="@+id/userProfile_username_affichage"
+        android:textColor="#2560A6"
+        android:text="Vd" />
+
+    <TextView
+        android:id="@+id/userProfile_badges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userProfile_reputation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/userBadges"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listBadgesUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userProfile_badges" 
+        android:paddingTop="10dp">
+    </ListView>
+
+</RelativeLayout>
