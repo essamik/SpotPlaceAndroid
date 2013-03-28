@@ -51,6 +51,11 @@ public class SpotDetail extends Activity implements ObserverREST {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
+		case android.R.id.home:
+			  Intent intent = new Intent(this, SpotList.class);
+			  intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+			  startActivity(intent);
+			  break; 
 		case R.id.menu_addSpot:
 			Intent intentAddSpot = new Intent(this, SpotCreate.class);
 			startActivity(intentAddSpot);
