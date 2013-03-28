@@ -15,7 +15,7 @@ import ch.heig.comem.spotplace.utilities.ServerUrl;
 public class CheckLogin extends AsyncTask <Void,  Void, String> { //param, barre de loading, Résultat du doInBackground
 	private String serverUrl = new ServerUrl().serverUrl;
 	private String serverPort= new ServerUrl().serverPort;
-	private String path = "http://"+this.serverUrl+":"+this.serverPort+"/SpotPlaceApplication/webresources/";
+	private String path = "http://"+this.serverUrl+":"+this.serverPort+"/SpotPlaceApplication-master/webresources/";
 
 	private JSONObject objectJSON;
 	private ObserverREST callBack;

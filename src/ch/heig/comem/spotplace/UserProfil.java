@@ -118,7 +118,7 @@ public class UserProfil extends Activity implements ObserverREST{
 					indexID++;
 				}
 				ServerUrl url = new ServerUrl();
-				new RequestRest(UserProfil.this, "http://"+ url.serverUrl+":"+url.serverPort+"/SpotPlaceMoteur/webresources/players/" + idPlayer, HttpMode.GET).execute();
+				new RequestRest(UserProfil.this, "http://"+ url.serverUrl+":"+url.serverPort+"/SpotPlaceMoteur-master/webresources/players/" + idPlayer, HttpMode.GET).execute();
 
 			} else {
 				//IF IT'S A PLAYER

@@ -34,7 +34,7 @@ public class UserList extends Activity implements ObserverREST{
 		setContentView(R.layout.user_list);
 		ServerUrl url = new ServerUrl();
 
-		new RequestRest(UserList.this, "http://"+ url.serverUrl+":"+url.serverPort+"/SpotPlaceMoteur/webresources/players/", HttpMode.GET).execute();		
+		new RequestRest(UserList.this, "http://"+ url.serverUrl+":"+url.serverPort+"/SpotPlaceMoteur-master/webresources/players/", HttpMode.GET).execute();		
 
 	}
 
