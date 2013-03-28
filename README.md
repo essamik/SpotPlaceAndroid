@@ -1,7 +1,11 @@
 SpotPlaceAndroid
 ================
 
-Application mobile SpotPlace
+Mobile application SpotPlace. Communicate with the back-end application and the engine.
+
+Please download the .zip folder at the root of the repository
+
+------------------------------------------------------------------
 
 1. Open "SpotPlaceMoteur" & "SpotPlaceApplication" in Netbeans
 
